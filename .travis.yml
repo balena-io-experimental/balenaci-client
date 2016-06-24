@@ -1,0 +1,8 @@
+---
+services:
+  - docker
+env:
+  - DOCKER_VERSION=1.10.3
+  - DIND_NAMESPACE=resinci-client
+script:
+  - "docker build -t resin/resinci-client:latest ."
